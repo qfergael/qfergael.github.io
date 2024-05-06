@@ -215,6 +215,8 @@ function verificarletra() {
         segundos = (segundosMax + 1);
         cambiarContador();
 
+        letraRecibida = letraRecibida.toLowerCase();
+
         for (let i = 0; i <= palabraCorrecta.length; i++) {
 
             if (letraRecibida == palabraCorrecta.substring(i, (i+1))) {
